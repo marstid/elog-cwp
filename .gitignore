@@ -1,0 +1,5 @@
+aws.sh
+dist/docker-compose.override.yml
+dist/*.xz
+.idea
+go.sum

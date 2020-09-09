@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  cwp:
+    image: cwp:latest
+    restart: always
+    environment:
+      ELOG_URL: http://elog.tld/api/webhook/elog
+      ELOG_KEY: 123456789
+      AWS_REGION: eu-central-1
+      AWS_ACCESS_KEY_ID: XYXXYXXYX
+      AWS_SECRET_ACCESS_KEY: XYXXYXXYX
+      CWPOLL_DEBUG: 0 # 1 = Enable, 0 = Disable
+      CWPOLL_PREFIX: red
+      CWPOLL_INT: 60s
+      CWPOLL_PRE: "TEST Alert Please Ignore: "
+      CWPOLL_DOWN: 1
